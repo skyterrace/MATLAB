@@ -26,7 +26,7 @@ controller.MaxAngularVelocity = 2;
 controller.LookaheadDistance = 0.5;
 goalRadius = 0.1;
 distanceToGoal = norm(robotCurrentLocation - robotGoal);
-controlRate = robotics.Rate(10);
+controlRate = robotics.Rate(20);
 while( distanceToGoal > goalRadius )
 
     % Compute the controller outputs, i.e., the inputs to the robot
