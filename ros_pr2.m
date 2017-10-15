@@ -22,15 +22,15 @@ tjPoint1.TimeFromStart.Nsec = 0;
 % Point 2
 tjPoint2 = rosmessage('trajectory_msgs/JointTrajectoryPoint');
 tjPoint2.Positions = [-1.0 0.2 0.1 -1.2 -1.5 -0.3 -0.5];
-tjPoint2.Velocities = zeros(1,7);
-tjPoint2.TimeFromStart.Sec = 4;
+tjPoint2.Velocities = [1.0 1.2 1.1 1.2 1.5 0.3 0.5];
+tjPoint2.TimeFromStart.Sec = 2;
 tjPoint2.TimeFromStart.Nsec = 0;
 
 % Point 3
 tjPoint3 = rosmessage('trajectory_msgs/JointTrajectoryPoint');
 tjPoint3.Positions = zeros(1,7);
-tjPoint3.Velocities = zeros(1,7);
-tjPoint3.TimeFromStart.Sec = 7;
+tjPoint3.Velocities = [1.0 1.2 1.1 1.2 1.5 0.3 0.5];%zeros(1,7);
+tjPoint3.TimeFromStart.Sec = 3;
 tjPoint3.TimeFromStart.Nsec = 0;
 
 jtMsg.Points = [tjPoint1,tjPoint2,tjPoint3,tjPoint2];
